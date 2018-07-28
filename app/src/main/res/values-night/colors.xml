@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/app_red_dark</color>
+    <color name="colorPrimaryDark">@color/app_dark_100</color>
+    <color name="colorAccent">@color/app_red</color>
+    <color name="colorAccentDark">@color/app_red_dark</color>
+
+    <color name="app_blue">#24AAFF</color>
+    <color name="app_dark">@color/app_dark_100</color>
+    <color name="white_80">#aaffffff</color>
+    <color name="white">#ffffff</color>
+
+    <color name="text_grey_caption">@color/grey_700</color>
+    <color name="text_grey_body">@color/grey_500</color>
+    <color name="text_grey_subheading">@color/grey_300</color>
+    <color name="text_grey_heading">@color/white</color>
+    <color name="text_grey_hint">@color/grey_700</color>
+
+    <color name="background_regular_gradient">#2d384a</color>
+    <color name="background_regular">@color/app_dark_200</color>
+    <color name="background_sep">@color/grey_800</color>
+    <color name="background_light">#4A4C5A</color>
+    <color name="background_dark_100">#11ffffff</color>
+    <color name="background_red">#22EA2330</color>
+
+    <color name="icon_tint">@color/grey_dropbox</color>
+    <color name="icon_tint_light">@color/grey_400</color>
+    <color name="icon_tint_dark">@color/app_dark_100</color>
+    <color name="image_placeholder">@color/medium_green_600</color>
+
+    <color name="separator_regular">@color/grey_sep</color>
+    <color name="separator_light">@color/grey_800</color>
+    <color name="separator_dark">@color/medium_green_600</color>
+</resources>

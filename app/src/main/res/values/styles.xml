@@ -1,0 +1,138 @@
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/background_regular</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme"></style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.Transparent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--Toolbar-->
+    <style name="ToolBarMasterStyleDark" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/background_regular</item>
+        <item name="android:textColorSecondary">@color/background_regular</item>
+        <item name="colorPrimary">@color/background_regular</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowDark</item>
+    </style>
+
+    <style name="ToolBarMasterStyleLight" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/app_dark_100</item>
+        <item name="android:textColorSecondary">@color/app_dark_200</item>
+        <item name="android:background">@color/background_regular</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowLight</item>
+    </style>
+
+    <style name="Toolbar.TitleTextMasterDark" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/toolbar_title_text_size</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textColor">@color/background_regular</item>
+    </style>
+
+    <style name="Toolbar.TitleTextMasterLight" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/toolbar_title_text_size</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textColor">@color/text_grey_heading</item>
+    </style>
+
+    <style name="Toolbar.SubtitleTextMasterLight" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">@dimen/toolbar_subtitle_text_size</item>
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textColor">@color/text_grey_caption</item>
+    </style>
+
+    <style name="Toolbar.SubtitleTextMasterDark" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">@dimen/toolbar_subtitle_text_size</item>
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textColor">@color/background_regular</item>
+    </style>
+
+    <style name="DrawerArrowDark" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/background_regular</item>
+        <item name="thickness">1dp</item>
+        <item name="gapBetweenBars">4dp</item>
+        <item name="drawableSize">24dp</item>
+    </style>
+
+    <style name="DrawerArrowLight" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/app_dark_100</item>
+        <item name="thickness">1dp</item>
+        <item name="gapBetweenBars">4dp</item>
+        <item name="drawableSize">24dp</item>
+    </style>
+
+    <style name="CollapsedToolbarTitleLight" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">@color/text_grey_heading</item>
+        <item name="android:textSize">@dimen/toolbar_title_text_size</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="CollapsedToolbarTitleDark" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">@color/background_regular</item>
+        <item name="android:textSize">@dimen/toolbar_title_text_size</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+    </style>
+
+    <style name="ExpendedToolbarTitleLight" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Toolbar.TitleText.Expand" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowRadius">8</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/app_red_dark</item>
+        <item name="android:shadowColor">@color/app_red_dark</item>
+    </style>
+
+    <style name="Toolbar.TitleText.Collapse" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowRadius">8</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">@android:color/black</item>
+    </style>
+</resources>

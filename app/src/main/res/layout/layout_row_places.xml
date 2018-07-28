@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="place"
+            type="com.jango.turtle.vo.Places" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_cake"
+            android:scaleType="fitXY"
+            app:imageUrl="@{place.photo.getPhoto()}"
+            app:layout_constraintEnd_toStartOf="@id/guide2"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Fitch Coffee"
+            android:textStyle="bold"
+            app:text="@{place.venue.name}"
+            app:layout_constraintStart_toEndOf="@id/guide2" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            app:text="@{place.getAddress()}"
+            android:layout_marginLeft="16dp"
+            android:text="kjh hkhj jh h jhjhjsdssdsdsdsdsdsdsdhjh jhjhj jhhjh jh jhjh"
+            app:layout_constraintStart_toEndOf="@id/guide2"
+            app:layout_constraintEnd_toStartOf="@id/guide1"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/name"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="400"
+            app:text="@{place.getDistance}"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintStart_toEndOf="@id/guide2"
+            app:layout_constraintTop_toBottomOf="@id/address"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guide2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="76dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.like.LikeButton
+            app:icon_type="heart"
+            android:id="@+id/favIcon"
+            app:like_drawable="@drawable/ic_like_full"
+            app:unlike_drawable="@drawable/ic_like"
+            app:anim_scale_factor="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/guide1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:circle_end_color="@android:color/holo_blue_dark"
+            app:circle_start_color="@android:color/holo_blue_bright"
+            app:dots_primary_color="@android:color/holo_blue_light"
+            app:dots_secondary_color="@android:color/holo_blue_dark"
+            app:icon_size="24dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

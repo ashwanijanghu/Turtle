@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="placeData"
+            type="com.jango.turtle.vo.Places" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_regular"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ui.detail.DetailsActivity"
+        tools:showIn="@layout/activity_details">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/text_margin">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="98dp"
+                android:layout_height="98dp"
+                android:scaleType="fitXY"
+                app:imageUrl="@{placeData.photo.getPhoto()}"/>
+
+            <TextView
+                android:id="@+id/distanceHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/image"
+                android:fontFamily="sans-serif"
+                android:text="Distance from Seattle Center"
+                android:textColor="@color/text_grey_subheading"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/image"
+                android:layout_below="@id/distanceHeading"
+                android:fontFamily="sans-serif"
+                android:text="900 m"
+                app:text="@{placeData.getDistance()}"
+                android:textColor="@color/text_grey_subheading"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:text="Gurgaon"
+                app:text="@{placeData.getAddress()}"
+                android:textColor="@color/text_grey_subheading"
+                android:drawableLeft="@drawable/sign"
+                android:drawablePadding="8dp"
+                android:textSize="14sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/text_grey_subheading"
+                android:text="206-883-7044"
+                android:drawableLeft="@drawable/phone_call"
+                android:gravity="center"
+                android:drawablePadding="8dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contact"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:textSize="14sp"
+                android:textColor="@color/text_grey_subheading"
+                android:text="www.google.com"
+                android:autoLink="web"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:drawableLeft="@drawable/internet"
+                android:drawablePadding="8dp"/>
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</layout>

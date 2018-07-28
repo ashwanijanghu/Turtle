@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Turtle</string>
+    <string name="error_unknown">An unknown error occurred.</string>
+    <string name="error_server_response">The server could not complete the request.</string>
+    <string name="error_response_malformed">Response from the server was not formatted correctly.</string>
+    <string name="format_error_server_message">Message: \"%s\"</string>
+    <string name="format_error_server_code">Code: \"%s\"</string>
+    <string name="error_network_error">Cannot connect to the Internet.</string>
+    <string name="share_via">Share Via</string>
+
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_regular">sans-serif-regular</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="path_search">M13.3843083,13.3956843 C11.233862,15.5399983 7.7581039,15.5381046 5.61000013,13.3900003 C3.46000004,11.2399998 3.46000004,7.76000023 5.61000013,5.61000013 C7.76000023,3.46000004 11.2400007,3.46000004 13.3900003,5.61000013 C15.54,7.76000023 15.5400009,11.2400007 13.3900003,13.3900003 C13.388104,13.3918967 13.3862067,13.3937913 13.3843083,13.3956843 C15.1427975,15.1834093 19.6826174,19.798706 19.6826172,19.7987061 L13.3843085,13.3956846 L13.3843083,13.3956843 Z</string>
+
+    <string name="shared_image_gallery">shared_image_gallery</string>
+    <string name="shared_image_srp">shared_image_srp</string>
+    <string name="search">Search</string>
+    <string name="got_it">Got it</string>
+    <string name="featured">Featured</string>
+    <string name="more">more</string>
+    <string name="error">Error</string>
+    <string name="notifications">Notifications</string>
+    <string name="night_mode">Night mode</string>
+
+    <string name="retry">Retry</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="a11y_user_photo">user photo</string>
+    <string name="a11y_user_name">user name</string>
+    <string name="search_hint">search repositories</string>
+    <string name="repo_full_name"><b>%s</b>/%s</string>
+    <string name="empty_search_result">No results for <b>%s</b></string>
+    <string name="a11y_contributor_avatar">contributor avatar</string>
+
+    <string name="seattle_lat_long">47.6062,-122.3321</string>
+    <string name="seattle_lat">47.6062</string>
+    <string name="seattle_long">-122.3321</string>
+    <string name="google_maps_key">YOUR_GOOGLE_MAP_API_KEY</string>
+    <string name="foursquare_client_id">FOUR_SQUARE_CLIENT_ID</string>
+    <string name="foursquare_client_secret">FOUR_SQUARE_CLIENT_SECRET</string>
+
+    <string name="title_activity_splash_actvity">SplashActvity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="query_hint">Coffee</string>
+    <string name="tag_places_search_map">PlacesSearchMapFragment</string>
+    <string name="tag_detail_places_map">DetailPlacesMapFragment</string>
+</resources>
